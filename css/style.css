@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --primary-color: #ce8601;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: .75rem 0;
+}
+
+/* Utility Classes */
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: var(--dark-color)
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.l-heading{
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+
+.list{
+    list-style: none;
+    margin: .5rem 0;
+}
+
+.list li{
+    padding: .5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+.lead{
+    font-size: 19px;
+    margin-bottom: 32px;
+}
+
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
+.my-1{margin: 1.5rem 0;}
+.my-2{margin: 2rem 0;}
+.my-3{margin: 3rem 0;}
+
+.m-1{margin: 1.5rem;}
+.m-2{margin: 2rem;}
+.m-3{margin: 3rem;}
+
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background: #3bad9e;
+    transition: background-color ease-in .1s;
+}
+
+.btn:active{
+    transform: scale(.98);
+}
+
+.btn-dark{
+    background: #333;
+    color: #fff;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 12px;
+    margin: 0 .25rem;
+    border-radius: 3px;
+}
+
+#navbar ul li a.current{
+    color: var(--primary-color);
+    background: rgb(61, 60, 60)
+}
+
+#navbar ul li a:hover{
+    background: var(--primary-color);
+    color: #333;
+    transition: background-color ease .1s;
+}
+
+/* Showcase */
+
+#showcase{
+    background: #333 url('../img/edge-ledge-bg.png') no-repeat center center/cover;
+    height: 93.5vh;
+    color: #fff;
+    width: 100%;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 32px;
+
+    /* Overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+
+/* Section: What We Do */
+
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i{
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url('../img/teachers.png') no-repeat center center/cover;
+}
+
+#who .who-text h3{
+    text-align: center;
+}
+
+/* Section: Clients */
+
+#clients .items{
+    display: flex;
+}
+
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+
+/* Section: Contact */
+
+#contact{
+    display: flex;
+}
+
+#contact .map, 
+#contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: .75rem;
+}
+
+#contact .contact-form .form-group label{
+    display: block;
+}
+
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea{
+    width: 100%;
+    padding: .5rem;
+}
+
+
+/* AIzaSyBmsG9cIKhglIgM7vLidMh-GG19qJ1WSGY */
